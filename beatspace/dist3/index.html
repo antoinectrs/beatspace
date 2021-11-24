@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Audio player with tempo adjustment (pitch maintained)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <main>
+
+
+
+    <!-- <div class=group>
+      <div class=url>
+        <label class=url_label for=url_input><span>Address</span></label>
+        <input id=url_input class=url_input type=url
+          value="https://websemantics.uk/pens/audio-tempo-change-fixed-pitch/media/hard-days-night.mp3">
+      </div>
+      <p>OR</p>
+      <div class=upload>
+        <label class=upload_label for=upload_input><span>Upload</span></label>
+        <input id=upload_input class=upload_input type=file accept="audio/*">
+      </div>
+
+    </div> -->
+
+    <div class=group>
+      <div class=player>
+        <h3 class=player_display></h3>
+        <audio class=player_audio controls>
+          <track id=player-chords kind=captions srclang=en>
+        </audio>
+      </div>
+      <div class=tempo>
+        <label class=tempo_label for=tempo_input>Tempo</label>
+        <input class=tempo_input id=tempo_input type=range value=0.825 min=0.5 max=1.5 step=0.025>
+        <span class=tempo_display></span>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>

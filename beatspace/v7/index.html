@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Reasonably clever tap-tempo</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <div class="parent">
+    <div class="div1 circle animate-this-element2 " id="track1"></div>
+    <div class="div2 circle animate-this-element" id="track2"><h1 class="animate-rotate">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h1></div>
+  </div>
+
+<!-- first sketch -->
+<div class="front">
+    <p id="location"></p>
+    <p id="output"></p>
+    <div class=group>
+      <div class=player>
+        <h3 class=player_display></h3>
+        <audio class=player_audio controls>
+          <!-- <track id=player-chords kind=captions srclang=en> -->
+        </audio>
+      </div>
+      <div class=tempo>
+        <label class=tempo_label for=tempo_input>Tempo</label>
+        <input class=tempo_input id=tempo_input type=range value=1 min=0.6 max=1.5 step=0.1>
+        <span class=tempo_display></span>
+      </div>
+    </div>
+    
+    <div class=group>
+      <div class=player><h3 class=player_display2></h3><audio class=player_audio2 controls></audio></div>
+      <div class=tempo>
+        <label class=tempo_label for=tempo_input>Tempo</label>
+        <input class=tempo_input id=tempo_input2 type=range value=1 min=0.6 max=1.5 step=0.1>
+        <span class=tempo_display2></span>
+      </div>
+    </div>
+</div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script  src="./js/vitesse.js"></script>
+  <script  src="./js/tempo.js"></script>
+  <script  src="./js/loca.js"></script>
+</body>
+
+
+</html>

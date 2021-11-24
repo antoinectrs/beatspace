@@ -1,0 +1,9 @@
+html {
+  background-color: #CC6633;
+  font-family: "Fira Mono",Monaco,"Andale Mono","Lucida Console","Bitstream Vera Sans Mono","Courier";
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
