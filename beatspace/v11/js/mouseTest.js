@@ -4,11 +4,7 @@ document.addEventListener("touchmove", () => {
     // const distCenter = DistanceSimple(0, mouseY);
     const distDebug = Distance(0,window.innerWidth/2, mouseY,window.innerWidth/2);
     translatecircle(distDebug);
-    if (PARAMS.beginShare == true) {
-        // let tempoMap = soundByMap(distDebug);
-        let tempoMap = soundByMap(PARAMS.actualDistance);
-        console.log(PARAMS.actualDistance);
-    }
+    if (PARAMS.beginShare == true)let tempoMap = soundByMap(PARAMS.actualDistance);
 });
 
 function sqr(a) {

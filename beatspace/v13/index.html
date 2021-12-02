@@ -1,0 +1,21 @@
+<!doctype html>
+
+
+<body>
+
+
+    <div id="overlay">Click to play</div>
+
+    <input type="button" onclick="sample.toggle();" value="Play/Pause">
+    Drums <input type="range" min="0" max="100" value="100" oninput="sample.crossfade(this);"> Organ</p>
+
+    <script src="./js/shared.js"></script>
+    <script src="./js/crossfade-sample.js"></script>
+    <script>
+      var sample = new CrossfadeSample();
+    </script>
+
+
+</body>
+
+</html>

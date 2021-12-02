@@ -9,12 +9,11 @@
 </head>
 
 <body>
-  <div id="background" class="parent">
+  <!-- <div id="background" class="parent">
     <div class="div1 circle animate-this-element2 " id="track1"></div>
     <div class="div2 circle " id="track2 animate-this-element">
-      <!-- <h1 id="cross" class="animate-rotate">|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|</h1> -->
     </div>
-  </div>
+  </div> -->
 
 <!-- first sketch -->
 <div class="front parent">
@@ -34,7 +33,11 @@
         <input class=tempo_input id=tempo_input type=range value=1 min=0.6 max=1.5 step=0.1>
         <span class=tempo_display></span>
       </div>
+      <div id="overlay">Click to play</div>
 
+      <input type="button" onclick="sample.toggle();" value="Play/Pause">
+      Drums <input id="lead"  type="range" min="0" max="100" value="50" oninput="sample.crossfade(this);"> Organ</p>
+  
     </div>
     
     <div class="group div2">
@@ -55,14 +58,14 @@
 
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+  <script src="./js/shared.js"></script>
+  <script src="./js/crossfade-sample.js"></script>
   <script  src="./js/loading.js"></script>
-  <script  src="./js/graphic.js"></script>
+  <!-- <script  src="./js/graphic.js"></script> -->
   <script  src="./js/vitesse.js"></script>
   <script  src="./js/tempo.js"></script>
   <script  src="./js/soundModify.js"></script>
-  
   <script  src="./js/mouseTest.js"></script>
- 
   <script  src="./js/loca.js"></script>
 </body>
 
@@ -70,7 +73,7 @@
 </html>
 <script >
 //  
-
+var sample = new CrossfadeSample();
 function translatecircle(val){
     const transConvert = mapRange(val, 0, 480, 30, 80);
     // console.log(document.querySelector('#track1'));
