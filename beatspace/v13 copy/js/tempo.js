@@ -1,8 +1,10 @@
+//
+// create HTML elements for demo
+//
 let PARAMS = {
   beginShare:false,
-  maxDistance:30,
+  maxDistance:20,
   actualDistance:null,
-  // leadFader: 40/2,
   locaTarget:{
     lat:46.5371124,
     lon:6.588135,
